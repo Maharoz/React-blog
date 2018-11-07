@@ -27,6 +27,7 @@ class Blog extends Component {
             });
             this.setState({posts:updatedPosts});
            // console.log(response);
+
         })
         .catch(error =>{
            // console.log(error);
@@ -56,7 +57,7 @@ class Blog extends Component {
                         </ul>
                     </nav>
                 </header>
-                <section className="Posts">
+                <section style={Object.assign({ display:'flex'},{justifyContent :'center'})}>
                    {posts}
                 </section>
                 <section>
